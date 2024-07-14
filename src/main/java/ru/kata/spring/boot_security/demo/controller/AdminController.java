@@ -14,7 +14,7 @@ import java.security.Principal;
 @RequestMapping("/admin")
 public class AdminController {
 
-    private final String REDIRECT = "redirect:/admin";
+    private static final String REDIRECT = "redirect:/admin";
 
     private final UserService userService;
     private final RoleService roleService;

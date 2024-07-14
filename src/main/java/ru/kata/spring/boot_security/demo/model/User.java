@@ -1,7 +1,6 @@
 package ru.kata.spring.boot_security.demo.model;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.util.Objects;
 import java.util.Set;
 
@@ -16,11 +15,8 @@ public class User {
     @Column(name = "username", unique = true)
     private String username;
 
-    @Column(name = "password")
     private String password;
 
-    @NotNull
-    @Column(name = "email")
     private String email;
 
     @ManyToMany

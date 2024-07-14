@@ -29,7 +29,7 @@ public class Init {
         roleService.save(admin);
         roleService.save(user);
 
-        userService.save(new User("AgentSmith", "matrixhasyou", "AgentSmith@freedom.net", Set.of(admin)));
+        userService.save(new User("AgentSmith", "matrixhasyou", "AgentSmith@freedom.net", Set.of(admin,user)));
         userService.save(new User("Neo", "followthewhiterabbit", "Zeon@zeon.org", Set.of(user)));
     }
 }

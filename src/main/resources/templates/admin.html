@@ -20,7 +20,7 @@
             </span>
             <span class="font-weight-light">
                 <th:block th:each="role : ${user.getRoles()}">
-                    <span th:if="${role.role == 'ADMIN'}" th:text="'with role: ' + ${role.role}">with role: ROLE</span>
+                  <span th:text="'with role: ' + ${role.role}">with role: ROLE</span>
                 </th:block>
             </span>
         </div>
@@ -86,7 +86,7 @@
                                         <td th:text="${user.getUsername()}"></td>
                                         <td th:text="${user.getEmail()}"></td>
                                         <td th:text="${user.getRoles()}"></td>
-                                         <!--Edit Button-->
+                                        <!--Edit Button-->
                                         <td>
                                             <button class="btn btn-success" data-bs-toggle="modal"
                                                     th:data-bs-target="${'#modalEdit'+user.getId()}"
